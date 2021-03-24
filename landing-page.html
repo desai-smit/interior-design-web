@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
 </head>
 <body>
@@ -79,24 +79,29 @@
             </div>
         </div>
     </div>
-    <div class="container3outer">
-        <div class="container3">
-            <div class="container3inner">
-                <div class="container container3-row">
-                    <div class="row container3row">
-                        <ul class="nav-ul">
-                            <li><a href="">KITCHENS</a></li>
-                            <li><a href="">BATHROOMS</a></li>
-                            <li><a href="">BEDROOM</a></li>
-                            <li><a href="">APPLIANCES</a></li>
-                            <li><a href="">SEVICES</a></li>
-                            <li><a href="">TESTIMONIALS</a></li>
-                            <li><a href="">SHOWROOM</a></li>
-                            <li><a href="">BLOG</a></li>
-                            <li class="contactus"><a href="">CONTACT US</a></li>
-                        </ul>
+    <div class="container3">
+        <div class="container-fluid no-padding">
+            <div class="row">
+                <div class="col-md-1 left-nav"></div>
+                <div class="col-md-10 middle-nav">
+                    <ul class="nav-ul" id="menu-container">
+                        <li><a href="">KITCHENS</a></li>
+                        <li><a href="">BATHROOMS</a></li>
+                        <li><a href="">BEDROOM</a></li>
+                        <li><a href="">APPLIANCES</a></li>
+                        <li><a href="">SEVICES</a></li>
+                        <li><a href="">TESTIMONIALS</a></li>
+                        <li><a href="">SHOWROOM</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li class="contactus"><a href="">CONTACT US</a></li>
+                    </ul>
+                    <div id="nevi" >
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
                     </div>
                 </div>
+                <div class="col-md-1 right-nav"></div>
             </div>
         </div>
     </div>
@@ -355,25 +360,19 @@
     </div>
     <div class="container10">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <img src="./images/bauformat.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="./images/englishrose.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="./images/schuco.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="./images/Bi fold door.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="./images/enne.png" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="./images/Burger.png" alt="">
-                </div>
+            <div class="owl-carousel owl-carousel2 owl-theme">
+                <div class="item"><img src="./images/bauformat.png" alt=""></div>
+                <div class="item"><img src="./images/englishrose.png" alt=""></div>
+                <div class="item"><img src="./images/schuco.png" alt=""></div>
+                <div class="item"><img src="./images/Bi fold door.png" alt=""></div>
+                <div class="item"><img src="./images/enne.png" alt=""></div>
+                <div class="item"><img src="./images/Burger.png" alt=""></div>
+                <div class="item"><img src="./images/bauformat.png" alt=""></div>
+                <div class="item"><img src="./images/englishrose.png" alt=""></div>
+                <div class="item"><img src="./images/schuco.png" alt=""></div>
+                <div class="item"><img src="./images/Bi fold door.png" alt=""></div>
+                <div class="item"><img src="./images/enne.png" alt=""></div>
+                <div class="item"><img src="./images/Burger.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -407,9 +406,9 @@
                         <span class="smaller-3"></span>
                         <span class="larger-3"></span>
                     </p>
-                    <p class="contact-detail-11"><span class="fa fa-map-marker icon-11"></span>Vadodara, India</p>
-                    <p><span class="fa fa-phone icon-11"></span>01895 810 444</p>
-                    <p><span class="fa fa-envelope icon-11"></span><span class="email-11">info@romanhaus.com</span></p>
+                    <p class="contact-detail-11"><span class="fa fa-map-marker icon-11"></span><a href="">Vadodara, India</a></p>
+                    <p><span class="fa fa-phone icon-11"></span><a href="">01895 810 444</a></p>
+                    <p><span class="fa fa-envelope icon-11"></span><span class="email-11"><a href="">info@romanhaus.com</a></span></p>
                 </div>
                 <div class="col4-11">
                     <p class="newsletter">NEWSLETTER</p>
@@ -423,7 +422,7 @@
                     </div>
                     <p class="connect">GET CONNECTED</p>
                     <div class="socialicon">
-                        <span class="fa fa-facebook face"></span>
+                        <span class="fa fa-facebook"></span>
                         <span class="fa fa-twitter"></span>
                         <span class="fa fa-google-plus"></span>
                         <span class="fa fa-instagram"></span>
@@ -450,13 +449,18 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.8min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
+
+    $("#navi").click(function(){
+        $("nav-ul").fadeToggle(1000);
+    });
+
     $('.owl-carousel1').owlCarousel({
     loop:true,
     autoplay:true,
@@ -474,6 +478,25 @@
         }
     }
 })
+
+    $('.owl-carousel2').owlCarousel({
+    loop:true,
+    autoplay: true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
     $('.owl-carousel').owlCarousel({
     loop:true,
     autoplay:true,
@@ -492,6 +515,32 @@
     }
 })
 
+
+</script>
+<script>
+    // function togglemenu() {
+    //     var m = document.getElementById("navtoggl");
+    //     m.classList.toggle(".container3 .nav-ul");
+    // }
+
+    // $("#navtoggl").click(function(){
+    //     $(".container3 .nav-ul").fadeToggle(1000);
+    // });
+
+    /*function myFunction() {
+         var x = document.getElementById("menu-container");
+         if (x.style.display === "none") {
+               x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        } 
+}*/
+
+$(document).ready(function(){
+  $("#nevi").click(function(){ 
+    $("#menu-container").toggle(1000);
+  });
+});
 </script>
 <script>
     AOS.init();
